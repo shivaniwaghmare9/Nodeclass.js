@@ -5,7 +5,10 @@ app.get("/", (req,res)=>{
     res.send("<h1>Welcome to my root page!!</h1>")
 })
 app.get("/home", (req,res)=>{
-    res.send("<h1>Welcome to my root page!!</h1>")
+    res.send("<h1>Welcome to my home page!!</h1>")
+})
+app.get("/about", (req,res)=>{
+    res.send("<h1>Welcome to my home page!!</h1>")
 })
 app.listen(4000,()=>{
     console.log("server is running on port 4000")
