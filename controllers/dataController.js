@@ -29,7 +29,12 @@ const dataDelete=async(req,res)=>{
     await dataModel.findByIdAndDelete(id);
     const student=await dataModel.find();
     res.render("update",{Data:student})
-
+}
+const editPage=async(req,res)=>{
+    const {id}=req.query;
+    const student=await dataModel.findById(id);
+    console.log(student)
+    res.render("editdata",{Data:student})
 }
 module.exports={
     homepage,
