@@ -27,11 +27,11 @@
 }
 #form{
     margin-top: 20px;
-    width: 400PX;
-    height: 370px;
+    width: 450PX;
+    height: 400px;
     margin-left: 33%;
     background-color: aliceblue;
-    padding: 2.4rem;
+    padding: 2.7rem;
     border-radius: 10px;
 }
 #form input{
