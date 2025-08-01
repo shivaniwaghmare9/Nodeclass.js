@@ -1,5 +1,5 @@
 
-const DataModel=require("../models/dataModel")
+const dataModel=require("../models/dataModel")
 const homePage=(req,res)=>{
     res.render("home")
 }
@@ -8,7 +8,7 @@ const insertPage=(req,res)=>{
 }
 const dataSave=async(req,res)=>{
     const {name,rollno,city,fees}=req.body;
-    const student=await DataModel.create({
+    const student=await dataModel.create({
         name:name,
         rollno:rollno,
         city:city,
