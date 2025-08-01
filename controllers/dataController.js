@@ -48,7 +48,10 @@ const editData=async(req,res)=>{
     res.render("update",{Data:student})
 }
 
-const searchPage=async(req,res)
+const searchPage=async(req,res)=>{
+    const data=[]
+    res.render("search",{Data:data})
+}
 module.exports={
     homepage,
     insertpage,
@@ -57,5 +60,6 @@ module.exports={
     updatePage,
     dataDelete,
     editPage,
-    editData
+    editData,
+    searchPage
 }
