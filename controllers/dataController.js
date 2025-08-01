@@ -52,6 +52,11 @@ const searchPage=async(req,res)=>{
     const data=[]
     res.render("search",{Data:data})
 }
+const searchData=async(req,res)=>{
+    const {name}=req.body;
+    const data=await dataModel.find({name:name});
+    res.render("search",{Data:data})
+}
 module.exports={
     homepage,
     insertpage,
@@ -61,5 +66,6 @@ module.exports={
     dataDelete,
     editPage,
     editData,
-    searchPage
+    searchPage,
+    searchData
 }

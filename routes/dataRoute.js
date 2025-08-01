@@ -10,8 +10,9 @@ route.get("/display",dataController.displayPage);
 route.get("/update",dataController.updatePage);
 route.get("/deletedata",dataController.dataDelete);
 route.get("/editdata",dataController.editPage);
-route.post("/editsave",dataController.editData)
-route.post("/search",dataController.searchPage)
+route.post("/editsave",dataController.editData);
+route.get("/search",dataController.searchPage);
+route.get("/searchdata",dataController.searchData);
 
 
 module.exports=route;
