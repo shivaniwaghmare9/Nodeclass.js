@@ -7,10 +7,12 @@ const insertpage=(req,res)=>{
     res.render("insert");
 }
 const dataSave=async(req,res)=>{
-    const {name,city}=req.body;
+    const {name,city,sub,fees}=req.body;
     const student=await dataModel.create({
         name:name,
-        city:city
+        city:city,
+        subject:sub,
+        fees:fees
     })
     res.render("insert");
 }
