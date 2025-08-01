@@ -24,10 +24,18 @@ const updatePage=async(req,res)=>{
     const student=await dataModel.find();
     res.render("update",{Data:student});
 }
+const dataDelete=async(req,res)=>{
+    const {id}=req.query;
+    await dataModel.findByIdAndDelete(id);
+    const student=await dataModel.find();
+    res.render("update",{Data:student})
+
+}
 module.exports={
     homepage,
     insertpage,
     dataSave,
     displayPage,
-    updatePage
+    updatePage,
+    dataDelete
 }
