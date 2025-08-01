@@ -11,6 +11,7 @@ route.get("/update",dataController.updatePage);
 route.get("/deletedata",dataController.dataDelete);
 route.get("/editdata",dataController.editPage);
 route.post("/editsave",dataController.editData)
+route.post("/search",dataController.searchPage)
 
 
 module.exports=route;
