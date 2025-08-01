@@ -16,9 +16,14 @@ const dataSave=async(req,res)=>{
     })
     res.render("insert");
 }
+const displaypage=async(req,res)=>{
+    const student=await dataModel.find();
+    res.render("display",{Data:student});
+}
 
 module.exports={
     homepage,
     insertpage,
-    dataSave
+    dataSave,
+    displaypage
 }
