@@ -15,7 +15,7 @@ app.use(bodyparser.json());
 
 app.set("view engine","ejs")
 app.use("/",dataRoute);
-
+app.use(express.static("./public"))
 
 app.listen(3000,()=>{
     console.log("Server is running on port 3000 ")
