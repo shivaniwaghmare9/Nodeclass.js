@@ -16,21 +16,21 @@
     <a href="/search">Search</a>
     </div>
     
-    <h2 class="h2">search page</h2>
+    <h2 class="h2">Search Data</h2>
     <form action="/searchdata" method="post" id="form2">
         Enter Name: <input type="text" name="name"><br/><br/>
         <button>Search</button>
     </form>
     <div id="search">
-  <% if(Data.length<1) { %>
-     <h2>Data not Found</h2>
- <% } %>
+    <% if(Data.length<1) { %>
+         <h2>Data not Found</h2>
+     <% } %>
+
     <% Data.forEach((key)=>{ %>
         <h2>Name: <%= key.name %></h2>
         <h2>City: <%= key.city %></h2>
         <h2>Subject: <%= key.subject %></h2>
         <h2>Fees: <%= key.fees %></h2>
-
     <% }) %>
 
     </div>

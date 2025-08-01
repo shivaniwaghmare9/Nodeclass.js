@@ -43,7 +43,8 @@
 }
 #form button{
     padding: 0.4rem;
-    background-color: dodgerblue;
+    background-color: black;
+    color: aliceblue;
     border-radius: 10px;
     font-size: 15px;
 }
@@ -79,7 +80,8 @@
 }
 #form2 button{
     padding: 0.4rem;
-    background-color: dodgerblue;
+    background-color: black;
+    color: aliceblue;
     border-radius: 10px;
     font-size: 15px;
 }
