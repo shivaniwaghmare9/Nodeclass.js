@@ -1,6 +1,10 @@
 
 const express=require("express");
 const app=express();
+const dataRoute=require("./routes/dataRoute");
+
+app.set("view engine","ejs")
+app.use("/",dataRoute);
 
 
 app.listen(3000,()=>{
