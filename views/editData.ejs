@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="header">
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+    <a href="/update">Update</a>
+    </div>
+    <hr>
+    <h2>editdata page</h2>
+    <form action="/save" method="post">
+        Enter Name: <input type="text" name="name" value="<%= Data.name %>"><br/><br/>
+        Enter City: <input type="text" name="city" value="<%= Data.city %>"><br/><br/>
+        Enter Subject: <input type="text" name="sub" value="<%= Data.subject %>"><br/><br/>
+        Enter Fees: <input type="text" name="fees" value="<%= Data.fees %>"><br/><br/>
+        <button>save</button>
+    </form>
+    
+</body>
+</html>

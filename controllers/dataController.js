@@ -42,5 +42,6 @@ module.exports={
     dataSave,
     displayPage,
     updatePage,
-    dataDelete
+    dataDelete,
+    editPage
 }
