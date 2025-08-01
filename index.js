@@ -6,7 +6,7 @@ const mongoose=require("mongoose");
 const bodyparser=require("body-parser");
 
 mongoose.connect("mongodb://127.0.0.1:27017/shivdb").then(()=>{
-    console.log("Databse connected successfully")
+    console.log("Database connected successfully")
 })
 
 //Body parser middleware
