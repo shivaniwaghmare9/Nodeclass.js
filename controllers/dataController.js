@@ -16,9 +16,9 @@ const dataSave=async(req,res)=>{
     })
     res.render("insert");
 }
-const displayPage=(req,res)=>{
-    // const student=await dataModel.find();
-    res.render("display");
+const displayPage=async(req,res)=>{
+    const student=await dataModel.find();
+    res.render("display",{Data:student});
 }
 
 module.exports={
