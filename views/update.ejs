@@ -15,13 +15,15 @@
     <a href="/update">Update</a>
     </div>
     <hr>
-    <h2>display page</h2>
+    <h2>update page</h2>
     <table border="1" id="tbl">
         <tr>
             <th>Name</th>
             <th>City</th>
             <th>Subject</th>
             <th>Fees</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
     <% Data.forEach((key)=>{ %>
         <tr>
@@ -29,6 +31,12 @@
             <td><%= key.city %></td>
             <td><%= key.subject %></td>
             <td><%= key.fees %></td>
+            <td>
+                <a href="/editdata/?id=<% key.id %>">edit</a>
+            </td>
+            <td>
+                <a href="/deletedata/?id=<% key.id %>">delete</a>
+            </td>
         </tr>
     <% }) %>
 

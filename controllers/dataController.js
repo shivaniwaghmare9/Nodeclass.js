@@ -20,10 +20,14 @@ const displayPage=async(req,res)=>{
     const student=await dataModel.find();
     res.render("display",{Data:student});
 }
-
+const updatePage=async(req,res)=>{
+    const student=await dataModel.find();
+    res.render("update",{Data:student});
+}
 module.exports={
     homepage,
     insertpage,
     dataSave,
-    displayPage
+    displayPage,
+    updatePage
 }
