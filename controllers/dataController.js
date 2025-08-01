@@ -36,6 +36,17 @@ const editPage=async(req,res)=>{
     console.log(student)
     res.render("editdata",{Data:student})
 }
+const editData=async(req,res)=>{
+    const {name,city,sub,fees}=req.body;
+    await dataModel.findByIdAndUpdate(id,{
+        name:name,
+        city:city,
+        subject:sub,
+        fees:fees
+    })
+    const student=await dataModel.find();
+    res.render("update",{Data:student})
+}
 module.exports={
     homepage,
     insertpage,

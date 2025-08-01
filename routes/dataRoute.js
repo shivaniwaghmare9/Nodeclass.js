@@ -9,7 +9,8 @@ route.post("/save",dataController.dataSave);
 route.get("/display",dataController.displayPage);
 route.get("/update",dataController.updatePage);
 route.get("/deletedata",dataController.dataDelete);
-route.get("/editdata",dataController.editPage)
+route.get("/editdata",dataController.editPage);
+route.post("/editsave",dataController.editData)
 
 
 module.exports=route;
