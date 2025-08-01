@@ -37,7 +37,7 @@ const editPage=async(req,res)=>{
     res.render("editdata",{Data:student})
 }
 const editData=async(req,res)=>{
-    const {name,city,sub,fees}=req.body;
+    const {id,name,city,sub,fees}=req.body;
     await dataModel.findByIdAndUpdate(id,{
         name:name,
         city:city,

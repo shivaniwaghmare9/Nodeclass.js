@@ -33,10 +33,10 @@
             <td><%= key.subject %></td>
             <td><%= key.fees %></td>
             <td>
-                <a href="/editdata/?id=<% key.id %>">edit</a>
+                <a href="/editdata/?id=<%= key.id %>">edit</a>
             </td>
             <td>
-                <a href="/deletedata/?id=<% key.id %>">delete</a>
+                <a href="/deletedata/?id=<%= key.id %>">delete</a>
             </td>
         </tr>
     <% }) %>
