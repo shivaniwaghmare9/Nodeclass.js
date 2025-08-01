@@ -40,3 +40,13 @@
     border-radius: 10px;
     font-size: 15px;
 }
+/*=*==============================================DISPLAY PAGE========================================================*/
+#tbl{
+    margin-left: 30%;
+    width: 600px;
+    height: auto;
+}
+#tbl tr th{
+    background-color: black;
+    color: aliceblue;
+}
