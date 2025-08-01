@@ -17,11 +17,12 @@
     <hr>
     <h2>editdata page</h2>
     <form action="/save" method="post">
+        <input type="hidden" name="id" value="<% Data.id %>">
         Enter Name: <input type="text" name="name" value="<%= Data.name %>"><br/><br/>
         Enter City: <input type="text" name="city" value="<%= Data.city %>"><br/><br/>
         Enter Subject: <input type="text" name="sub" value="<%= Data.subject %>"><br/><br/>
         Enter Fees: <input type="text" name="fees" value="<%= Data.fees %>"><br/><br/>
-        <button>save</button>
+        <button>Edit save</button>
     </form>
     
 </body>
