@@ -47,6 +47,8 @@ const editData=async(req,res)=>{
     const student=await dataModel.find();
     res.render("update",{Data:student})
 }
+
+const searchPage=async(req,res)
 module.exports={
     homepage,
     insertpage,
@@ -54,5 +56,6 @@ module.exports={
     displayPage,
     updatePage,
     dataDelete,
-    editPage
+    editPage,
+    editData
 }
