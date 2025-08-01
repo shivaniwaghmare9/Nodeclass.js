@@ -16,6 +16,23 @@
     </div>
     <hr>
     <h2>display page</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Subject</th>
+            <th>Fees</th>
+        </tr>
+    <% Data.forEach((key)=>{ %>
+        <tr>
+            <td><%= key.name %></td>
+            <td><%= key.city %></td>
+            <td><%= key.subject %></td>
+            <td><%= key.fees %></td>
+        </tr>
+    <% }) %>
+
+    </table>
     
     
 </body>
