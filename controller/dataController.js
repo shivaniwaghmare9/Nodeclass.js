@@ -6,6 +6,7 @@ const homePage=(req,res)=>{
 const insertPage=(req,res)=>{
     res.render("insert");
 }
+const 
 
 module.exports={
     homePage,
