@@ -12,7 +12,7 @@ route.get("/deletedata",dataController.dataDelete);
 route.get("/editdata",dataController.editPage);
 route.post("/editsave",dataController.editData);
 route.get("/search",dataController.searchPage);
-route.get("/searchdata",dataController.searchData);
+route.post("/searchdata",dataController.searchData);
 
 
 module.exports=route;

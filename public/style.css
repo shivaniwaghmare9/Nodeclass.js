@@ -83,3 +83,11 @@
     border-radius: 10px;
     font-size: 15px;
 }
+#search{
+    margin-top: 20px;
+    background-color: rgb(77, 160, 175);
+    padding: 1rem;
+}
+#search h2{
+    margin-left: 20%;
+}
