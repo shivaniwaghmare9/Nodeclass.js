@@ -1,3 +1,51 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="header">
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+    <a href="/update">Update</a>
+    <a href="/search">Search</a>
+    </div>
+    
+    <h2 class="h2">Update Data</h2>
+    <table border="1" id="tbl">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Subject</th>
+            <th>Fees</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    <% Data.forEach((key)=>{ %>
+        <tr>
+            <td><%= key.name %></td>
+            <td><%= key.city %></td>
+            <td><%= key.subject %></td>
+            <td><%= key.fees %></td>
+            <td>
+                <a href="/editdata/?id=<%= key.id %>">edit</a>
+            </td>
+            <td>
+                <a href="/deletedata/?id=<%= key.id %>">delete</a>
+            </td>
+        </tr>
+    <% }) %>
+
+    </table>
+    
+    
+</body>
+</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
